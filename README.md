@@ -4,6 +4,10 @@
 
 Initial Commit only include kotlinx.datetime utils, others will follow.
 
+![android](https://img.shields.io/badge/android-blue.svg?logo=android)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![jitpack](https://jitpack.io/v/Morons/CryptoCodeAndroidLibrary.svg)](https://jitpack.io/#Morons/CryptoCodeAndroidLibrary)
+
 ### Sample time related functions
 
 **NOTEs:**
