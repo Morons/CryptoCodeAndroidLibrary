@@ -31,3 +31,23 @@ Initial Commit only include kotlinx.datetime utils, others will follow.
 * `Long.relativeTimeSpanUtc()`= 5 days ago
 
 P.S. Request more Utilities if you need.
+
+## Configuration
+
+### Gradle - Kotlin
+
+In your root build.gradle.kts
+
+```kotlin
+repositories {
+	mavenCentral()
+	maven("https://jitpack.io")
+	...
+}
+```
+add the dependency
+```kotlin
+dependencies {
+	implementation("com.github.Morons:CryptoCodeAndroidLibrary:1.0")
+}
+```
