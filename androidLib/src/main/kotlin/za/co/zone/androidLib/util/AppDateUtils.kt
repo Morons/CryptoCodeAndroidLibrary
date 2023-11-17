@@ -1,4 +1,4 @@
-package za.co.zone.androidLib
+package za.co.zone.androidLib.util
 
 import android.text.format.DateUtils
 import kotlinx.datetime.*
