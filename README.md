@@ -1,6 +1,6 @@
 # by CryptoCode
 
-## an Library for Android Users
+## a Utility Library for Android Users
 
 Initial Commit only include kotlinx.datetime utils, others will follow.
 
