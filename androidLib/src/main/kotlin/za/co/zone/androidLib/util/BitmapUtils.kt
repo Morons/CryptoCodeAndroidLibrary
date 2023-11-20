@@ -24,11 +24,7 @@ fun Uri.getByteArrayStringFromUri(context: Context): String {
 fun String.decodeImageString(): ByteArray = decode(this, DEFAULT)
 
 fun ByteArray.toBitmap(): Bitmap? =
-	if (isNotEmpty()) {
-		BitmapFactory.decodeByteArray(this, 0, this.size)
-	} else {
-		null
-	}
+	if (isNotEmpty()) BitmapFactory.decodeByteArray(this, 0, this.size) else null
 
 fun String.toBitmap(): Bitmap? =
 	if (this.isNotEmpty()) this.decodeImageString().toBitmap() else null

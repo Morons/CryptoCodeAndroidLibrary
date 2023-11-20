@@ -158,17 +158,17 @@ fun AppTextField(
 					)
 				},
 				// FIXME: https://github.com/material-components/material-components-android/issues/3528
-				leadingIcon = {
-					if (leadingIcon != null) {
-						IconButton(onClick = { onLeadingButtonClick() }) {
-							Icon(
-								imageVector = leadingIcon,
-								contentDescription = null,
-								modifier = Modifier.size(24.dp)
-							)
-						}
-					} else {}
-				},
+//				leadingIcon = {
+//					if (leadingIcon != null) {
+//						IconButton(onClick = { onLeadingButtonClick() }) {
+//							Icon(
+//								imageVector = leadingIcon,
+//								contentDescription = null,
+//								modifier = Modifier.size(24.dp)
+//							)
+//						}
+//					} else {}
+//				},
 				trailingIcon = {
 					if (trailingIcon != null) {
 						IconButton(

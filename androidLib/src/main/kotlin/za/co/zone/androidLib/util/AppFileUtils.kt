@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Environment
 import android.provider.MediaStore
+import android.provider.MediaStore.Images.Media
 import android.util.Log
 import androidx.core.content.FileProvider
 import za.co.zone.androidLib.util.VersionCheck.isAtLeastQ29
@@ -57,13 +58,13 @@ object AppFileUtils {
 	
 	fun Bitmap.saveImageToSharedMediaStore(context: Context): Uri? {
 		val contentUri: Uri = if (isAtLeastQ29()) {
-			MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
+			Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
 		} else {
-			MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+			Media.EXTERNAL_CONTENT_URI
 		}
 		val contentResolver = context.contentResolver
 		val newImageDetails = ContentValues()
-		newImageDetails.put(MediaStore.Images.Media.DISPLAY_NAME, TEMP_IMAGE_FILENAME)
+		newImageDetails.put(Media.DISPLAY_NAME, TEMP_IMAGE_FILENAME)
 		val imageContentUri = contentResolver.insert(contentUri, newImageDetails)
 		try {
 			contentResolver.openFileDescriptor(imageContentUri!!, "w", null).use { fileDescriptor ->

@@ -12,11 +12,6 @@ class EmailManager {
 
 	fun evaluateEmail(mailAddressToTest: String): Boolean {
 		val matcher: Matcher = emailAddressPattern.matcher(mailAddressToTest)
-//		Log.i(GLOBAL_TAG, "TestEmail.Matches = ${matcher.matches()}")
-//		Log.i(GLOBAL_TAG, "TestEmail.Full match: ${matcher.group(0)}")
-//		for (i in 1..matcher.groupCount()) {
-//			Log.i(GLOBAL_TAG, "TestEmail.Group $i: ${matcher.group(i)}")
-//		}
 		return matcher.matches()
 	}
 }
