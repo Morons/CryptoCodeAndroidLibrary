@@ -90,6 +90,6 @@ repositories {
 add the dependency
 ```kotlin
 dependencies {
-	implementation("com.github.Morons:CryptoCodeAndroidLibrary:1.0.2")
+	implementation("com.github.Morons:CryptoCodeAndroidLibrary:1.0.6")
 }
 ```
