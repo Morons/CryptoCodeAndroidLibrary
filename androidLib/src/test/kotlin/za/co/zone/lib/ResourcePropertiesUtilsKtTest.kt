@@ -1,9 +1,9 @@
-package za.co.zone.androidLib
+package za.co.zone.lib
 
 import setResourceProperty
 import getResourceProperty
+import org.junit.Assert.assertEquals
 import org.junit.Test
-import kotlin.test.assertEquals
 
 class ResourcePropertiesUtilsKtTest {
 	

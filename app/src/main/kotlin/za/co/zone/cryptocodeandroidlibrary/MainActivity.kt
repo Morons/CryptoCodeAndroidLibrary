@@ -18,7 +18,6 @@ class MainActivity : ComponentActivity() {
 		super.onCreate(savedInstanceState)
 		setContent {
 			CryptoCodeAndroidLibraryTheme {
-				// A surface container using the 'background' color from the theme
 				Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
 					Log.d(GLOBAL_TAG, "Instant.dateTimePeriod()=${now().dateTimePeriod()}")
 					Log.d(GLOBAL_TAG, "nowToLongSystemDefault()=${nowToLongSystemDefault()}")
