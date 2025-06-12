@@ -18,5 +18,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CryptoCodeAndroidLibrary"
-include(":app")
 include(":androidLib")

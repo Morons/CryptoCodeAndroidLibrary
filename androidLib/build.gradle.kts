@@ -43,7 +43,7 @@ publishing {
 		register<MavenPublication>(name = "release") {
 			groupId = "com.github.Morons"
 			artifactId = "android-library"
-			version = "1.0.8"
+			version = "1.0.9"
 			
 			afterEvaluate {
 				from(components["release"])
@@ -58,7 +58,7 @@ dependencies {
 	implementation("com.github.bumptech.glide:glide:4.16.0")
 	annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 	implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.2")
-	implementation("org.mongodb:bson:5.5.0")
+	implementation("org.mongodb:bson:5.5.1")
 	implementation("androidx.core:core-ktx:1.16.0")
 	implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
 	implementation("androidx.activity:activity-compose:1.10.1")
