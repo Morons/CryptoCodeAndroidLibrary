@@ -17,10 +17,15 @@ private val dayOfMonthNumber: Int = dateInUtc.dayOfMonth
 private val yearNumber: Int = dateInUtc.year
 private val time: LocalTime = datetimeInUtc.time
 private val firstDayUtc: Instant = Instant.parse(
-	isoString = "${yearNumber.toString().padStart(length = 4, padChar = '0')}-${
-		monthNumber.toString().padStart(length = 2, padChar = '0')
-	}-01T00:00:00Z"
+	input = "${yearNumber.toString().padStart(length = 4, padChar = '0')}-" +
+			"${monthNumber.toString().padStart(length = 2, padChar = '0')}-01T00:00:00Z"
 )
+
+//private val firstDayUtc: Instant = Instant.parse(
+//	isoString = "${yearNumber.toString().padStart(length = 4, padChar = '0')}-${
+//		monthNumber.toString().padStart(length = 2, padChar = '0')
+//	}-01T00:00:00Z"
+//)
 private val nextMonth: Instant = firstDayUtc.plus(value = 1, unit = DateTimeUnit.MONTH, timeZone = TimeZone.UTC)
 private val lastDay: Instant = nextMonth.minus(value = 1, unit = DateTimeUnit.DAY, timeZone = TimeZone.UTC)
 private val durationToNextMonth: Duration = nextMonth - currentMoment
